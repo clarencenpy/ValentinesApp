@@ -1,26 +1,21 @@
 <template name="messageForm">
-	<header>
+	<header >
 		<h1>Send some love<span>to friends and loved ones</span></h1>	
 	</header>
 	<div class="main">
 		<form id="nl-form" class="nl-form">
-			I want to send my   
+			I want to send
+			<br>
 			<select name="type">
-				<option value="love" selected>love</option>
-				<option value="thanks">thanks</option>
-				<option value="kisses">kisses</option>
-				<option value="hugs">hugs</option>
-				<option value="confession">confession</option>
+                <option value="love" selected>some love</option>
+                <option value="thanks">a word of thanks</option>
+                <option value="kisses">kisses</option>
+                <option value="hugs">hugs</option>
+                <option value="confession">a confession</option>
 			</select>
-			to 
-			<select name="receiver">
-				<option value="SIS" selected>SIS</option>
-				<option value="Steve Miller">Steve Miller</option>
-				<option value="Clarence">Clarence</option>
-				<option value="Zac">Zac</option>
-				<option value="Ranon">Ranon</option>
-			</select>
-			.
+			to
+            <input name="recipient" type="text" value="" placeholder="everyone" data-subline="Enter recipient's name here"/>
+			!
 			<br>
 			What I want to say is:  
 			<input name="message" type="text" value="" placeholder="I love you" data-subline="Enter your message here"/>
@@ -28,7 +23,11 @@
 			<br>
 			<i class="fa fa-heart"></i>
 			<input name="sender" type="text" value="" placeholder="anonymous" data-subline="Enter your name here"/>
-
+            ,
+			<select name="gender">
+                <option value="his" selected>Boy</option>
+                <option value="her">Girl</option>
+            </select>
 
 			<div class="nl-submit-wrap">
 				<button class="nl-submit" type="submit">Send</button>

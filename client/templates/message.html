@@ -1,8 +1,9 @@
 <template name="message">
-	<div class="message">
-		<span>{{sender}} sent his/her {{type}} to {{receiver}}</span>
-		<br>
-		<span>{{message}}</span>
-
-	</div>
+	{{#AnimateWithVelocity}}
+		<div class="message col-md-5"
+			data-animate data-property="opacity" data-duration="500" data-from-value="0" data-to-value="1">
+			<div class="head"><i class="fa fa-heart"></i> {{sender}} sent {{gender}} {{type}} to {{recipient}}</div>
+			<div class="text">{{message}}</div>
+		</div>
+	{{/AnimateWithVelocity}}
 </template>

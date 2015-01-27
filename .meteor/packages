@@ -9,3 +9,6 @@ autopublish
 insecure
 linto:fontawesome
 iron:router
+twbs:bootstrap
+frozeman:animation-helper-velocity
+ccorcos:transitioner

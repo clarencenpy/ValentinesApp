@@ -52,7 +52,7 @@ NLField.prototype = {
 			this._createDropDown();	
 		}
 		else if( this.type === 'input' ) {
-			this._createInput();	
+			this._createInput();
 		}
 	},
 	_createDropDown : function() {

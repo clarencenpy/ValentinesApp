@@ -2,12 +2,16 @@
 	<header>
 		<h1>
 			Wall Of Love<span>School of Information Systems</span>	
-			<a href="{{pathFor 'form'}}"><span><i class="fa fa-heart"></i> Send a message now!</span></a>
+			<a href="{{pathFor 'form'}}">
+				<span class="link"><i class="fa fa-heart"></i> Send a message now!</span>
+			</a>
 		</h1>
 	</header>
 	<div class="main">
-		{{#each messages}}
-			{{> message}}
-		{{/each}}
+		<div class="row">
+			{{#each messages}}
+				{{> message}}
+			{{/each}}
+		</div>
 	</div>
 </template>
