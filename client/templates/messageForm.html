@@ -1,0 +1,43 @@
+<template name="messageForm">
+	<header>
+		<h1>Send some love<span>to friends and loved ones</span></h1>	
+	</header>
+	<div class="main">
+		<form id="nl-form" class="nl-form">
+			I want to send my   
+			<select name="type">
+				<option value="love" selected>love</option>
+				<option value="thanks">thanks</option>
+				<option value="kisses">kisses</option>
+				<option value="hugs">hugs</option>
+				<option value="confession">confession</option>
+			</select>
+			to 
+			<select name="receiver">
+				<option value="SIS" selected>SIS</option>
+				<option value="Steve Miller">Steve Miller</option>
+				<option value="Clarence">Clarence</option>
+				<option value="Zac">Zac</option>
+				<option value="Ranon">Ranon</option>
+			</select>
+			.
+			<br>
+			What I want to say is:  
+			<input name="message" type="text" value="" placeholder="I love you" data-subline="Enter your message here"/>
+			<br>
+			<br>
+			<i class="fa fa-heart"></i>
+			<input name="sender" type="text" value="" placeholder="anonymous" data-subline="Enter your name here"/>
+
+
+			<div class="nl-submit-wrap">
+				<button class="nl-submit" type="submit">Send</button>
+			</div>
+			<div class="nl-overlay"></div>
+		</form>
+
+	</div>
+	<script>
+		var nlform = new NLForm(document.getElementById( 'nl-form' ))
+	</script>
+</template>
