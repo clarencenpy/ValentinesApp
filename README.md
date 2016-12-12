@@ -1,4 +1,4 @@
-# ValentinesApp
+# WallOfLove
 Messaging Board made for Valentines Day 2014 at SMU
 
 <img src="screenshots/Screenshot1.png" width="300"/>
